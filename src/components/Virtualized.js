@@ -9,9 +9,7 @@ export default function Virtualized({ items, itemHeight, containerHeight }) {
         items.length
     );
     const visibleItems = items.slice(startIndex, endIndex + 1);
-    useEffect(() => {
-        console.log(scrollTop)
-    })
+ 
     const handleScroll = (e) => {
         setScrollTop(e.currentTarget.scrollTop);
     };
